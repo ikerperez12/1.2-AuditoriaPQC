@@ -1,6 +1,3 @@
-# Local Visualizer Walkthrough
-
-I have set up a local environment to run the Jupyter Lab visualizer without Docker.
 
 ## Prerequisites
 - Python 3.x installed (Found at `C:\Users\XXX\AppData\Local\Programs\Python\Python312\python.exe`)
