@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  # EL OBJETIVO: Servidor Web con soporte Post-Cuántico (Nginx + OQS-OpenSSL)
+  pqc_server:
+    image: openquantumsafe/nginx
+    container_name: pqc_server
+    ports:
+      - "4433:4433"
+    networks:
+      - pqc_lab_net
+
+  # EL ATACANTE/SONDA: Cliente con herramientas OQS (Curl + OpenSSL)
+  # Usamos este contenedor para lanzar los comandos 'openssl s_client' desde el script de Python
+  pqc_client:
+    image: openquantumsafe/curl
+    container_name: pqc_client
+    # Mantenemos el contenedor vivo para poder inyectar comandos
+    entrypoint: [ "tail", "-f", "/dev/null" ]
+    networks:
+      - pqc_lab_net
+    depends_on:
+      - pqc_server
+
+networks:
+  pqc_lab_net:
+    driver: bridge

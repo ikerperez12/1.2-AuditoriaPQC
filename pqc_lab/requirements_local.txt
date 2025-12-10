@@ -1,0 +1,5 @@
+jupyterlab
+pandas
+plotly
+scapy
+streamlit

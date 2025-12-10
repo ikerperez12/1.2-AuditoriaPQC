@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# VS Code
+.vscode/
+
+# PQC Lab Runtime Data (Generated files)
+captures/*.json
+captures/*.pcap
+captures/*.txt
+
+# Configuration State (Local only)
+lab_config.json
+
+# OS Generated
+.DS_Store
+Thumbs.db
