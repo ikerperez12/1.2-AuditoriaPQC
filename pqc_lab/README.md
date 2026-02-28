@@ -84,4 +84,4 @@ Cubre:
 *   **Datos no aparecen**: Asegúrate de que el modo en el Dashboard (Barra lateral) esté en "REAL" o "PHYSICS" y no en "PAUSA".
 
 ---
-**Desarrollado con ❤️ para la asignatura SSI-TT-2526.**
+**Desarrollado con ❤️ IKER PEREZ**
