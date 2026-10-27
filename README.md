@@ -6,7 +6,7 @@
 1.  Open PowerShell.
 2.  Navigate to the `pqc_lab` directory:
     ```powershell
-    cd "SSI-TT-2526/pqc_lab"
+    cd "1.2-AuditoriaPQC/pqc_lab"
     ```
 3.  Run the setup script:
     ```powershell
